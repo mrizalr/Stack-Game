@@ -38,7 +38,10 @@ public class StackBox : StackElement
 
         if (app.model.boxStacked > 1)
         {
-            CutTheBox();
+            if (collision.gameObject.CompareTag("Box"))
+            {
+                CutTheBox();
+            }
             //float cutSize = app.model.boxList[app.model.boxStacked - 1].transform.position.x - 
             //    app.model.boxList[app.model.boxStacked - 2].transform.position.x;
 
@@ -50,17 +53,14 @@ public class StackBox : StackElement
     {
         if (app.model.boxStacked > 1)
         {            
-            if (Mathf.Abs(app.model.boxList[app.model.boxStacked-1].transform.position.x - app.model.boxList[app.model.boxStacked-2].transform.position.x) > 4)
+            if ((Mathf.Abs(app.model.boxList[app.model.boxStacked-1].transform.position.x - app.model.boxList[app.model.boxStacked-2].transform.position.x) > 4))
             {
                 app.model.isGameOver = true;
-                Debug.Log("GAME OVER !!");
-                //app.model.boxList[app.model.boxStacked - 1].GetComponent<Rigidbody>().constraints &= ~RigidbodyConstraints.FreezeRotationZ;
-                for (int i = 0; i < app.model.boxStacked; i++)
-                {
-                    app.model.boxList[i].GetComponent<Rigidbody>().constraints &= ~RigidbodyConstraints.FreezeRotationZ;
-                }
+            }
 
-                GameObject.FindGameObjectWithTag("MainCamera").transform.LookAt(GameObject.Find("Ground").transform);
+            if (app.model.boxList[app.model.boxStacked - 1].transform.position.y <= app.model.boxList[app.model.boxStacked - 2].transform.position.y)
+            {
+                app.model.isGameOver = true;
             }
         }
     }

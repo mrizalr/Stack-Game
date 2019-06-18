@@ -8,6 +8,7 @@ TagManager:
   - BoxGroup
   - Patrol
   - CameraPoint
+  - Box
   layers:
   - Default
   - TransparentFX

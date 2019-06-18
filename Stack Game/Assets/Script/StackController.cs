@@ -25,6 +25,8 @@ public class StackController : StackElement
         GenerateNewBox();
 
         cam.transform.position = Vector3.Lerp(cam.transform.position, cameraPoint, .2f);
+
+        GameOver();
     }
 
     public void MoveBox(GameObject box)
@@ -68,10 +70,26 @@ public class StackController : StackElement
                 //cam.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y + 4.5f, cam.transform.position.z);
 
                 GameObject newBox = Instantiate(app.model.boxPrefabs, new Vector3(app.model.point[app.model.currentPoint].transform.position.x, patrol.transform.position.y, 0), Quaternion.identity, GameObject.FindGameObjectWithTag("Generator").transform) as GameObject;
+                newBox.transform.localScale = app.model.boxList[app.model.boxStacked-1].transform.localScale;
 
                 app.model.isReady = false;
                 app.model.dropBox = false;
             }
+        }
+    }
+
+    private void GameOver()
+    {
+        if (app.model.isGameOver)
+        {
+            Debug.Log("GAME OVER !!");
+            //app.model.boxList[app.model.boxStacked - 1].GetComponent<Rigidbody>().constraints &= ~RigidbodyConstraints.FreezeRotationZ;
+            for (int i = 0; i < app.model.boxStacked; i++)
+            {
+                app.model.boxList[i].GetComponent<Rigidbody>().constraints &= ~RigidbodyConstraints.FreezeRotationZ;
+            }
+
+            GameObject.FindGameObjectWithTag("MainCamera").transform.LookAt(GameObject.Find("Ground").transform);
         }
     }
 }
