@@ -71,6 +71,7 @@ public class StackController : StackElement
 
                 GameObject newBox = Instantiate(app.model.boxPrefabs, new Vector3(app.model.point[app.model.currentPoint].transform.position.x, patrol.transform.position.y, 0), Quaternion.identity, GameObject.FindGameObjectWithTag("Generator").transform) as GameObject;
                 newBox.transform.localScale = app.model.boxList[app.model.boxStacked-1].transform.localScale;
+                newBox.GetComponent<Renderer>().material.color = new Color(Random.Range(0f,1f), Random.Range(0f, 1f), Random.Range(0f, 1f));
 
                 app.model.isReady = false;
                 app.model.dropBox = false;
@@ -89,7 +90,7 @@ public class StackController : StackElement
                 app.model.boxList[i].GetComponent<Rigidbody>().constraints &= ~RigidbodyConstraints.FreezeRotationZ;
             }
 
-            GameObject.FindGameObjectWithTag("MainCamera").transform.LookAt(GameObject.Find("Ground").transform);
+            GameObject.FindGameObjectWithTag("MainCamera").transform.LookAt(app.model.boxList[app.model.boxStacked-1].transform);
         }
     }
 }

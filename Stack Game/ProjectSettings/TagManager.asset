@@ -9,6 +9,7 @@ TagManager:
   - Patrol
   - CameraPoint
   - Box
+  - CutBox
   layers:
   - Default
   - TransparentFX

@@ -13,6 +13,7 @@ public class StackModel : StackElement
     public bool dropBox = false;
     public bool isReady = false;
     public GameObject boxPrefabs;
+    public GameObject cutBoxPrefabs;
     public bool isGameOver = false;
     public int counter=0;
 
