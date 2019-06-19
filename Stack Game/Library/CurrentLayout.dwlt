@@ -113,7 +113,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 1
-  controlID: 93
+  controlID: 76
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 94
+  controlID: 77
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 14
+  controlID: 56
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -188,7 +188,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 15
+  controlID: 57
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -408,9 +408,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 82f0ffff
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: d6fbffff082a0000122a00002a2a0000322a0000442a0000502a0000
+      m_ExpandedIDs: 00b5ffffa2beffff98c0ffffa2c0ffffd6fbffff082a0000122a00002a2a0000442a0000502a0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -466,9 +466,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.718617, y: 3.713625, z: -2.156104}
+    m_Target: {x: 699.647, y: 129.0304, z: 10.702332}
     speed: 2
-    m_Value: {x: 1.718617, y: 3.713625, z: -2.156104}
+    m_Value: {x: 699.647, y: 129.0304, z: 10.702332}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -496,13 +496,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.6090726, y: -0.0035689832, z: 0.0027408446, w: 0.7931017}
+    m_Target: {x: -0.054570217, y: 0.011981846, z: 0.0006548579, w: 0.9984378}
     speed: 2
-    m_Value: {x: 0.6090726, y: -0.0035689832, z: 0.0027408446, w: 0.7931017}
+    m_Value: {x: -0.054570217, y: 0.011981846, z: 0.0006548579, w: 0.9984378}
   m_Size:
-    m_Target: 5.684663
+    m_Target: 536.643
     speed: 2
-    m_Value: 5.684663
+    m_Value: 536.643
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -642,19 +642,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Script
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 56
   m_LastFolders:
-  - Assets/Script
+  - Assets/Prefabs
   m_LastFoldersGridSize: 56
   m_LastProjectPath: D:\MAGANG\Stack-Game\Stack Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 26290000
-    m_LastClickedID: 10534
+    m_SelectedIDs: 90290000
+    m_LastClickedID: 10640
     m_ExpandedIDs: 00000000bc27000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -710,7 +710,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000088300000102d000034350000fe370000623100004c5f000028680000ea2f00008c180100b82e0000ac510000202900008c280000482900001a2900000e2b00005c2a00007a38000008280000ea5500007a41000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -792,7 +792,7 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -1068
+  m_LastSelectedObjectID: -19200
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
