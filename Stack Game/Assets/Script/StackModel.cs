@@ -1,29 +1,32 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿//using System.Collections;
+//using System.Collections.Generic;
+//using UnityEngine;
 
-public enum Condition { moving, stopped }
+//namespace Agate.Stack.Box.Model
+//{
+//    public class StackModel
+//    {
+//        public enum Condition
+//        {
+//            moving,
+//            stopped
+//        }
 
-public class StackModel : StackElement
-{
-    public Condition con = Condition.stopped;
-    public float speed = 1;
-    public GameObject[] point;
-    public int currentPoint;
-    public bool dropBox = false;
-    public bool isReady = false;
-    public GameObject boxPrefabs;
-    public GameObject cutBoxPrefabs;
-    public bool isGameOver = false;
-    public int counter=0;
+//        public Condition con = Condition.stopped;
 
-    //public GameObject[] boxes;
-    public List<GameObject> boxList = new List<GameObject>();
-    public int boxStacked;
+//        public float speed = 1;
 
-    //private void Start()
-    //{
-    //    boxes = new GameObject[1];
-    //}
+//        public List<GameObject> boxList = new List<GameObject>();
 
-}
+//        public GameObject[] point;
+
+//        public int currentPoint;
+//        public int counter = 0;
+//        public int boxStacked;
+
+//        public bool dropBox = false;
+//        public bool isReady = false;
+//        public bool isGameOver = false;
+//    }
+
+//}
